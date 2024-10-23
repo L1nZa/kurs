@@ -10,14 +10,7 @@ namespace Склад
         private string[] availableTables;  // Доступные таблицы
         private string connectionString = @"Data Source=ADCLG1;Initial Catalog=УЧ_Мирзоев;Integrated Security=True";
 
-        public Form2(string userRole)
-        {
-            InitializeComponent();
-            role = userRole;
-            User.Text = $"{role}";  // Отображаем роль пользователя
-            SetUserLabelColor(role); // Устанавливаем цвет текста
-            LoadAvailableTables();  // Загружаем доступные таблицы
-        }
+        
 
         // Метод для установки цвета текста для роли пользователя
         private void SetUserLabelColor(string role)
